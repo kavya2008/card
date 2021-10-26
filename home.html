@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="home.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+    <title>Greeting Card</title>
+</head>
+<body>
+    <p class="para">Click card to open</p>
+
+    <div class="container">
+      <div class="row">
+        <div class="col-lg-6" id="front"></div>
+        <div class="col-lg-6" id="left"></div>
+        <div class="col-lg-6" id="right"></div>
+      </div>
+    </div>
+    <script>
+        var opn=document.getElementById('front');
+        var lft=document.getElementById('left');
+        var c=document.getElementById('cover');
+        opn.addEventListener('click',function(){
+            lft.classList.add('rotateleft');
+            
+        })
+    </script>
+</body>
+</html>

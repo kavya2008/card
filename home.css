@@ -1,0 +1,45 @@
+body{
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    
+    color: wheat;
+}
+.container{
+    position: relative;
+    min-height: 1200px;
+}
+.row>div{
+    position: absolute;
+    height: 450px;
+    top: 100px;
+    
+    left: 50%;
+}
+#front{
+    background-color: rgb(9, 66, 66);
+    backface-visibility: hidden;
+    transition:transform 2s;
+    transform-style:preserve-3d ;
+    transform-origin: left;
+    z-index: 1;
+}
+#left{
+    backface-visibility: hidden;
+   left: 0%;
+    transition:transform 2s;
+    transform-style:preserve-3d ;
+    transform-origin: right;
+    background-color: rgb(197, 95, 197);
+}
+#right{
+    background-color: rgb(192, 126, 192);
+}
+
+.rotateleft{
+    transform:rotateY(180deg);
+}
+.rotateback{
+    transform: rotateY(-180deg);
+}
+.row{
+    perspective: 1500px;
+}
